@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* 幅はwidthで指定・枠はpaddingで表記 */
+
+.box {
+  background-color: #A5E2EF;
+  width: 240px;
+  margin: 0 auto 20px;
+  padding: 20px;
+}
+
+/* 幅widthで指定・高さはpaddingで指定。paddingの左右は0で。 */
+.inline-box {
+  width: 200px;
+  background-color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* 箱のサイズはpaddingで指定・text-alignを使用するため、inline-blockにする */
+.align-box {
+  display: inline-block;
+  text-align: center;
+  background-color: #a3b4e9;
+  padding: 10px;
+}
+
+/* inline要素のため、そのまま指定して文字を真ん中寄せ */
+.align-text {
+  text-align: center;
+}
+
+/* margin 0 autoでセンター寄せ。widthで幅を指定 */
+.margin-box {
+  background-color: #a3b4e9;
+  width: 90px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* ここからtable */
+.container {
+  display: table;
+  width: 250px;
+  height: 150px;
+  background-color: #A5E2EF;
+  margin: 0 auto 20px;
+}
+
+.table-box {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-text {
+  display: inline-block;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* ここからflex */
+/* flexを指定して、 justify-contentで横軸（主軸が左から右へ）、aline-itemsで縦軸（交差軸が上から下へ）を中央寄せ*/
+.flex-box {
+  width: 250px;
+  height: 150px;
+  background-color: #A5E2EF;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-text {
+  background-color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* ここからposition */
+.position-box {
+  width: 290px;
+  padding: 20px;
+  background-color: #A5E2EF;
+  margin: 0 auto;
+}
+
+/* relativeで基準を指定 */
+.position-inner {
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  position: relative;
+}
+
+/* absoluteで絶対位置へ、topでこのブロックの左上が親要素のtopから半分の箇所へleftで横幅の半分を指定。このブロックの左上の角が親要素の中央になるため、transformで位置を調整。 */
+.position-text {
+  background-color: #a3b4e9;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+

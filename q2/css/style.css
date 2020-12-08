@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+.container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+.card-text {
+  display: flex;
+}
+
+.card-text li {
+  width: 200px;
+  background-color: #d2b48a;
+  border-radius: 13px;
+  box-shadow: 0 0 0 6px #655;
+  outline: 10px solid #655;
+  list-style: none;
+  padding: 10px;
+  margin: 30px;
+}
+
+/* flexを使用することで高さがテキストの高さがいちばん高いものに全て統一される */

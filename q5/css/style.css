@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.list-item {
+  width: 65px;
+  padding: 10px;
+  margin: 10px;
+  color: #fff;
+  background: #00bbdd;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row .list-item:last-child {
+  margin-right: 0;
+}
+
+.row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.row-reverse .list-item:last-child {
+  margin-left: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.column-reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.nowrap {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-item {
+  padding: 10px;
+  color: #fff;
+  background-color: #00bbdd;
+}
+
+.grid-fr {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.red {
+  background-color: #dd0700;
+  grid-column: 1/3;
+}
+
+.blue {
+  background-color: #00bbdd;
+}
+
+.green {
+  background-color: #0bdd00;
+  grid-row: 2/4;
+}
+
+.yellow {
+  background-color: #d9dd00;
+  grid-column: 2/4;
+  grid-row: 2;
+}
+
+.grid-Layout {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-gap: 10px;
+}
